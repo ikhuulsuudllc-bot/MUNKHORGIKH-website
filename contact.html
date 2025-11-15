@@ -62,3 +62,116 @@
 
     .card-title {
       font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .card-subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    .field { margin-bottom: 14px; }
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+      color: #374151;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      font-size: 14px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    button {
+      width: 100%;
+      padding: 11px 18px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 14px 30px rgba(79, 70, 229, 0.45);
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #4338ca;
+      transform: translateY(-2px);
+    }
+
+    .small-text {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <a href="index.html">Нүүр</a>
+    <a href="about.html">Миний тухай</a>
+    <a href="contact.html" class="active">Холбоо барих</a>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="card-title">📬 Холбоо барих</div>
+    <div class="card-subtitle">Асуух зүйл байвал доорхи формоор над руу илгээнэ үү.</div>
+
+    <form action="mailto:ikhuulsuudllc@gmail.com" method="POST" enctype="text/plain">
+      
+      <div class="field">
+        <label>Нэр</label>
+        <input type="text" name="Name" placeholder="Таны нэр" required>
+      </div>
+
+      <div class="field">
+        <label>И-мэйл</label>
+        <input type="email" name="Email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="field">
+        <label>Мессеж</label>
+        <textarea name="Message" placeholder="Юу асуухыг хүсэж байна вэ?" required></textarea>
+      </div>
+
+      <div class="hint">Илгээхэд таны төхөөрөмжийн и-мэйл апп автоматаар нээгдэнэ.</div>
+
+      <button type="submit">Мессеж илгээх</button>
+
+      <div class="small-text">
+        Эсвэл надад шууд бичиж болно: <strong>ikhuulsuudllc@gmail.com</strong>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
